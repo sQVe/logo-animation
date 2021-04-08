@@ -1,11 +1,28 @@
-import { BackgroundCloud, Title } from "./parts";
-import "./styles.css";
+import React from 'react'
+
+import {
+  BackgroundCloud,
+  Pupil,
+  ForegroundCloud,
+  PartsWrapper,
+  Title,
+  Tower,
+  Sclera,
+} from './components'
+
+import './global.css'
 
 export default function App() {
   return (
     <main className="App">
-      <BackgroundCloud />
+      <PartsWrapper>
+        <BackgroundCloud />
+        <Sclera />
+        <Pupil />
+        <Tower />
+        <ForegroundCloud />
+      </PartsWrapper>
       <Title />
     </main>
-  );
+  )
 }
